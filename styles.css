@@ -91,6 +91,9 @@ header {
     background-color: rgb(19, 19, 19);
     overflow-y: scroll;
 }
+.playlist_div::-webkit-scrollbar {
+    display: none;
+}
 .playlists {
     display: flex;
     flex-direction: column;
@@ -259,6 +262,9 @@ header {
     height: auto;
     margin-top: 70px;
     overflow-y: scroll;
+}
+.main_content::-webkit-scrollbar {
+    display: none;
 }
 .artists_heading {
     display: flex;
