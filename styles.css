@@ -1,0 +1,442 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.main_container {
+    display: flex;
+    overflow: hidden;
+}
+
+.container_left {
+    position: sticky;
+    margin: 8px;
+    width: 22.5%;
+}
+.navigate_div {
+    background-color: rgb(19, 19, 19);
+    height:auto;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+}
+#nav a{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+}
+#nav a p {
+    font-size: 1rem;
+}
+
+
+.library_div {
+    background-color: rgb(19, 19, 19);
+    min-height: 77vh;
+    padding: 12px;
+    border-radius: 10px;
+    margin-top: 8px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.8rem;
+}
+.lib_header_left a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 10px;
+    gap: 10px;
+    color: rgb(194, 187, 187);
+}
+.lib_header_left i{
+    font-size: 1.8rem;
+}
+.lib_header_left a:hover {
+    color: white;
+}
+.add_logo a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    padding: 10px;
+    color: grey;
+}
+.add_logo a:hover {
+    color: white;
+    border-radius: 50%;
+    background-color: rgb(28, 28, 28);
+}
+.playlist_div {
+    height: 200px;
+    width: 100%;
+    margin-top: 15px;
+    background-color: rgb(19, 19, 19);
+    overflow-y: scroll;
+}
+.playlists {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(31, 30, 30);
+    border-radius: 10px;
+    padding: 0px 20px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    line-height: 2rem;
+    margin-top: 10px;
+}
+.playlists p {
+    font-size: 0.9rem;
+}
+.btn1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    color: black;
+    background: white;
+    padding: 0rem 0.5rem;
+    border-radius: 5rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+    /* display: inline-block; */
+    font-weight: 600;
+    /* letter-spacing: .1rem; */
+    margin-top: 15px;
+}
+
+.btn1 a{
+    color: black;
+}
+.podcasts {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(31, 30, 30);
+    border-radius: 10px;
+    padding: 0px 20px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    line-height: 2rem;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+.podcasts p {
+    font-size: 0.9rem;
+}
+.btn2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    color: black;
+    background: white;
+    padding: 0rem 0.5rem;
+    border-radius: 5rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+    /* display: inline-block; */
+    font-weight: 600;
+    /* letter-spacing: .1rem; */
+    margin-top: 20px;
+}
+.btn2 a{
+    color: black;
+}
+.footer_left {
+    margin: 15px;
+    padding-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 15px;
+}
+.footer_left a{
+    font-size: 0.8rem;
+    color: rgb(194, 187, 187);
+    line-height: 1.5rem;
+}
+.btn3 {
+    width: 110px;
+    background: transparent;
+    border: 1px solid rgb(194, 187, 187);
+    border-radius: 5rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+    /* display: inline-block; */
+    font-weight: 600;
+    /* letter-spacing: .1rem; */
+    margin-top: 40px;
+    margin-left: 15px;
+}
+.btn3 a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 0.3rem 0rem;
+    /* padding: 0.5rem 1rem; */
+    gap: 5px;
+}
+.btn3 a i{
+    font-size: 1.5rem;
+}
+.btn3 a p {
+    font-size: 0.9rem;
+}
+.btn3:hover {
+    border: 1px solid white;
+    transform: scale(1.05);
+}
+
+.container_right {
+    margin: 8px;
+    margin-left: 0px;
+    width: 149px;
+}
+.navbar {
+    position: fixed;
+    width: 149vh;
+    height: 70px;
+    background-color: rgb(19, 19, 19);
+    margin-left: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
+}
+.nav_left {
+    margin-left: 20px;
+}
+.nav_left a{
+    color: white;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn4 {
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-right: 2rem;
+}
+.btn{
+    color: black;
+    background: white;
+    padding: 0.8rem 1.8rem;
+    border-radius: 5rem;
+    font-size: 1.2rem;
+    display: inline-block;
+    font-weight: 600;
+}
+
+.main_content {
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgb(19, 19, 19) 80%, rgb(37, 36, 36) 100%);
+    width: 149vh;
+    height: auto;
+    margin-top: 70px;
+    overflow-y: scroll;
+}
+.artists_heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+    padding-top: 50px;
+}
+.artists_heading a h3 {
+    color: white;
+    font-size: 1.5rem;
+}
+.artists_heading h3:hover {
+    text-decoration: underline;
+}
+.artists_heading a p{
+    color: rgb(197, 189, 189);
+}
+.artists_heading a p:hover {
+    text-decoration: underline;
+}
+.artists_profiles{
+    margin: 8px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.artists_profiles a{
+    color: white;
+}
+.artists_profiles a p {
+    color: rgb(194, 187, 187);;
+}
+.artists {
+    border-radius: 10px;
+    height: 250px;
+    width: 175px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.artists:hover {
+    background-color: rgb(40, 39, 39);
+}
+.artists .play{
+    height: auto;
+    width: auto;
+    font-size: 3rem;
+    margin-left: 112px;
+    margin-top: -60px;
+    margin-bottom: 7px;
+    color: rgb(87, 237, 87);
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.artists .play:hover {
+    transform: scale(1.05);
+    color: rgb(120, 235, 120);
+}
+.artists img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin-top: 12px;
+    margin-left: 12px;
+}
+.title {
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin: 12px;
+    line-height: 1.8rem;
+}
+
+
+.albums_heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+    padding-top: 50px;
+}
+.albums_heading a h3 {
+    color: white;
+    font-size: 1.5rem;
+}
+.albums_heading h3:hover {
+    text-decoration: underline;
+}
+.albums_heading a p{
+    color: rgb(197, 189, 189);
+}
+.albums_heading a p:hover {
+    text-decoration: underline;
+}
+.albums_profiles{
+    margin: 8px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.albums_profiles a{
+    color: white;
+}
+.albums_profiles a p {
+    color: rgb(194, 187, 187);;
+}
+.albums {
+    border-radius: 10px;
+    height: 250px;
+    width: 175px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.albums:hover {
+    background-color: rgb(40, 39, 39);
+}
+.albums img{
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+    margin-top: 12px;
+    margin-left: 12px;
+}
+.albums .play{
+    height: auto;
+    width: auto;
+    font-size: 3rem;
+    margin-left: 107px;
+    margin-top: -58px;
+    margin-bottom: 7px;
+    color: rgb(87, 237, 87);
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.albums .play:hover {
+    transform: scale(1.05);
+    color: rgb(120, 235, 120);
+}
+.title {
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin: 12px;
+    line-height: 1.8rem;
+}
+
+.footer_right {
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 30px;
+    padding-bottom: 30px;
+    margin-right: 250px;
+}
+.footer_right ul {
+    display: flex;
+    flex-direction: column;
+    line-height: 2rem;
+}
+.footer_right ul a{
+    color: rgb(151, 146, 146);
+}
+.footer_right ul a:hover {
+    color: white;
+    text-decoration: underline;
+}
+.separate_line {
+    padding: 0px 30px;
+}
+.copyright {
+    padding: 40px 30px;
+    padding-bottom: 90px;
+    color: rgb(151, 146, 146);
+}
